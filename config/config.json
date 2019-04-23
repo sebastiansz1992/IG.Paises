@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "ig-paises-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/igPaises/IgPaisesWebPart.js",
+          "manifest": "./src/webparts/igPaises/IgPaisesWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery":{
+      "path": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
+      "globalName": "jquery"
+    }
+  },
+  "localizedResources": {
+    "IgPaisesWebPartStrings": "lib/webparts/igPaises/loc/{locale}.js"
+  }
+}
